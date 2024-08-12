@@ -30,7 +30,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -q -U google-generativeai
-          pip install dotenv
+          pip install -U python-dotenv
           pip install tweepy
           # pip install -r requirements.txt
           
