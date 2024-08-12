@@ -7,19 +7,19 @@ from utils import *
 from dotenv import load_dotenv
 load_dotenv() 
 
-key_nytimes = os.getenv("KEY_NYTIMES")
+key_nytimes = os.getenv("key_nytimes")
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("google_api_key")
 if not GOOGLE_API_KEY:
-    raise ValueError("GOOGLE_API_KEY environment variable is not set.")
+    raise ValueError("google_api_key environment variable is not set.")
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 client = tweepy.Client(
-    consumer_key=os.getenv("CONSUMER_KEY"), consumer_secret=os.getenv("CONSUMER_SECRET"),
-    access_token=os.getenv("ACCESS_TOKEN"), access_token_secret=os.getenv("ACCESS_TOKEN_SECRET")
+    consumer_key=os.getenv("consumer_key"), consumer_secret=os.getenv("consumer_secret"),
+    access_token=os.getenv("access_token"), access_token_secret=os.getenv("access_token_secret")
 )
 
 
