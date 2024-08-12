@@ -6,12 +6,12 @@ on:
 #     - cron: '0 9 * * *' # At 09:00 on each day
 
 env:
-  KEY_NYTIMES: ${{ secrets.KEY_NYTIMES }}
-  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-  CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
-  CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
-  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-  ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+  key_nytimes: ${{ secrets.KEY_NYTIMES }} 
+  google_api_key: ${{ secrets.GOOGLE_API_KEY }} 
+  consumer_key: ${{ secrets.CONSUMER_KEY }} 
+  consumer_secret: ${{ secrets.CONSUMER_SECRET }}
+  access_token: ${{ secrets.ACCESS_TOKEN }}
+  access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
 
 jobs:
   build:
