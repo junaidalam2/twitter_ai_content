@@ -24,7 +24,7 @@ client = tweepy.Client(
 
 
 def post_twitter(posts_gemini, headline):
-    intro = f'Poem based on NY Times headline: {headline}'
+    intro = f'AI-Gen poem based on NY Times headline: {headline}'
     text = f'{intro}\n{posts_gemini}'
     client.create_tweet(text=text)
 
